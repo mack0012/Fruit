@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this is body  */
+
+body {
+    background-color: #faf4f1;
+}
+
+/* this is form  */
+
+form {
+    margin: 50px 450px 50px;
+    padding: 0;
+    width: 450px;
+    height: 550px;
+    background-color: white;
+}
+
+
+/* this is box  */
+
+form .box {
+    width: 450px;
+    height: 150px;
+    background-color: #f5e9e5;
+}
+
+form .box h2 {
+    padding-top: 50px;
+    color: #daa200;
+    text-align: center;
+}
+
+form p {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+/* this is main  */
+
+main {
+    padding: 0px 30px;
+}
+
+form main :nth-child(1) span {
+    font-size: 25px;
+    color: #ebae00;
+}
+
+input[type="text"],
+input[type="submit"] {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+form main :nth-child(3) {
+    padding-top: 30px;
+    color: #888;
+}
+
+form main :nth-child(3) span {
+    cursor: pointer;
+    color: #ebae00;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ebae00;
+}
+
+form main :nth-child(5) {
+    padding-top: 40px;
+    color: #888;
+}
+
+form main :nth-child(5) span {
+    cursor: pointer;
+    color: #ebae00;
+}
+
+@media (max-width:990px) {
+
+    form {
+        margin: 14px 269px;
+    }
+
+}

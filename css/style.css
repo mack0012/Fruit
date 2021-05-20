@@ -1,0 +1,1921 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* this is for html smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* this is body tag  */
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+/* this is  nav bar  */
+
+nav {
+    margin: 0;
+    padding: 0px 5px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+
+    /* adding position sticky */
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+.navHeader {
+    overflow: hidden;
+    display: flex;
+}
+
+nav .navlogo {
+    float: left;
+}
+
+nav .navlogo img {
+    position: absolute;
+    left: 10px;
+    height: 45px;
+    width: 45px;
+}
+
+nav .navSearch {
+
+    position: relative;
+    margin-left: 60px;
+    width: 495px;
+}
+
+nav .navSearch input[type="search"] {
+    margin-top: 5px;
+    padding: 0px 45px 0px 10px;
+    width: 450px;
+    height: 40px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    background-color: white;
+}
+
+nav .navSearch button {
+    position: absolute;
+    top: 5px;
+    right: 45px;
+    height: 40px;
+    width: 45px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+
+nav .navSearch button i {
+    font-size: 20px;
+    color: gold;
+}
+
+nav .active {
+    padding: 10px;
+    width: 51px;
+    height: 50px;
+    border-radius: 1px;
+    background-color: gold;
+}
+
+nav .ul {
+    width: 712px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    width: 85px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    transition: .3s all;
+    list-style-type: none;
+}
+
+nav .ul li a {
+    text-decoration: none;
+    display: block;
+    font-family: bold;
+    color: #fff;
+}
+
+nav ul li:hover {
+    background-color: gold;
+    border-radius: 1px;
+}
+
+nav ul .loging {
+    width: 106px;
+}
+
+.menueBar {
+    float: right;
+    max-width: auto;
+    padding: 0px 10px;
+    display: none;
+    line-height: 50px;
+}
+
+.menueBar i {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+/* this is header bar  */
+
+header {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2)),
+        url(../img/unnamed.jpg);
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+
+}
+
+header .background_middle {
+    width: 750px;
+    height: 300px;
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+header .background_middle h3 {
+    padding-top: 25px;
+    font-size: 70px;
+}
+
+header .background_middle h3 span {
+    color: gold;
+    font-family: 'Pacifico', cursive;
+}
+
+header .background_middle div h1 {
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+}
+
+header .background_middle p {
+    padding-top: 25px;
+    width: 600px;
+    font-family: bold;
+}
+
+header .background_middle .button {
+    padding-top: 30px;
+}
+
+header .background_middle .button input[type="button"] {
+    width: 90px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #e1b12c;
+}
+
+header .background_middle .button #btn {
+    margin-left: 30px;
+    background-color: black;
+}
+
+header .background_middle .button input[type="button"]:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header .background_middle .button #btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* this is product section  */
+
+.top-product {
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #eee;
+
+}
+
+.top-product .container h1 {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    display: block;
+
+}
+
+.top-product .container h1::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 606px;
+    width: 138px;
+    border-bottom: 3px solid gold;
+}
+
+.top-product .product {
+    margin: 100px 0px 0px 140px;
+    width: 80%;
+    height: 315px;
+    box-sizing: border-box;
+
+    /* adding flex-box */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.top-product .product .product-box-1,
+.product-box-2,
+.product-box-3 {
+    width: 300px;
+    height: 315px;
+    transition: 0.4s all;
+    background-color: white;
+}
+
+.top-product .product .product-box-1,
+.product-box-2,
+.product-box-3,
+img {
+    width: 250px;
+}
+
+/* product box 1  */
+
+.top-product .product .product-box-1 img {
+    height: 180px;
+    border-radius: 100%;
+}
+
+.top-product .product .product-box-1 h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.top-product .product .product-box-1 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-1 .rupess {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-1 .button {
+    padding: 10px 0px 0px 60px;
+}
+
+.top-product .product .product-box-1 .button i {
+    padding: 5px 0px 0px 5px;
+    background-color: gold;
+    height: 25px;
+    width: 30px;
+    position: relative;
+}
+
+.top-product .product .product-box-1 .button input[type="button"] {
+    height: 25px;
+    width: 100px;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid gold;
+    background-color: white;
+}
+
+.top-product .product .product-box-1:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* this is box 2 */
+
+.top-product .product .product-box-2 img {
+    height: 180px;
+    border-radius: 100%;
+}
+
+.top-product .product .product-box-2 h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.top-product .product .product-box-2 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-2 .rupess {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-2 .button {
+    padding: 10px 0px 0px 60px;
+}
+
+.top-product .product .product-box-2 .button i {
+    padding: 5px 0px 0px 5px;
+    background-color: gold;
+    height: 25px;
+    width: 30px;
+    position: relative;
+}
+
+.top-product .product .product-box-2 .button input[type="button"] {
+    height: 25px;
+    width: 100px;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid gold;
+    background-color: white;
+}
+
+.top-product .product .product-box-2:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* this is box-3  */
+
+.top-product .product .product-box-3 img {
+    height: 180px;
+    border-radius: 100%;
+}
+
+.top-product .product .product-box-3 h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.top-product .product .product-box-3 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-3 .rupess {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.top-product .product .product-box-3 .button {
+    padding: 10px 0px 0px 60px;
+}
+
+.top-product .product .product-box-3 .button i {
+    padding: 5px 0px 0px 5px;
+    background-color: gold;
+    height: 25px;
+    width: 30px;
+    position: relative;
+}
+
+.top-product .product .product-box-3 .button input[type="button"] {
+    height: 25px;
+    width: 100px;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid gold;
+    background-color: white;
+}
+
+.top-product .product .product-box-3:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* this is view more tag  */
+
+.top-product .view_more {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.top-product .view_more input[type="button"] {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.5s all;
+    background-color: black;
+}
+
+.top-product .view_more input[type="button"]:hover {
+    cursor: pointer;
+    background-color: gold
+}
+
+/* this is about meal  */
+
+.about_meal {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 540px;
+    background-color: white;
+}
+
+.about_meal h1 {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about_meal h1::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 575px;
+    width: 200px;
+    border-bottom: 3px solid gold;
+
+}
+
+.about_meal .main-content {
+    margin: 100px 10px 0px 100px;
+    width: 90%;
+    height: 350px;
+    position: relative;
+}
+
+.about_meal .main-content img {
+    width: 450px;
+    height: auto;
+}
+
+.about_meal .main-content .paragraph {
+    position: absolute;
+    width: 660px;
+    height: auto;
+    top: 0;
+    left: 560px;
+
+}
+
+.about_meal .main-content .paragraph p {
+    padding-top: 30px;
+    line-height: 25px;
+    text-indent: 10px;
+    width: 600px;
+}
+
+
+.about_meal .main-content .paragraph p::first-letter {
+    color: gray;
+    font-size: 20px;
+}
+
+/* this is class of btn */
+.btn {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.btn input[type="button"] {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.5s all;
+    background-color: black;
+}
+
+.btn input[type="button"]:hover {
+    cursor: pointer;
+    background-color: gold
+}
+
+/* this is services  */
+
+.services {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 560px;
+    background-color: #e6e6e6;
+}
+
+.services h1 {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.services h1::after {
+    content: "";
+    width: 100px;
+    top: 60px;
+    left: 625px;
+    position: absolute;
+    border-bottom: 3px solid gold;
+}
+
+.services .content {
+    margin: 110px 0px 0px 180px;
+    padding: 0;
+    width: 70%;
+    height: 300px;
+
+    /* adding flex box  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services .content .box1,
+.box2,
+.box3 {
+    margin-top: 50px;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+}
+
+/* this is box1  */
+
+.services .content .box1 {
+    position: relative;
+}
+
+.services .content .box1 svg {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.services .content .box1 svg circle {
+    height: 80px;
+    width: 80px;
+    stroke: black;
+    stroke-width: 3px;
+    fill: white;
+}
+
+.services .content .box1 i {
+    top: -5px;
+    left: 123px;
+    position: absolute;
+}
+
+.services .content .box1 .lorem {
+    margin-top: 50px;
+}
+
+.services .content .box1 .lorem h3 {
+    text-align: center;
+}
+
+.services .content .box1 .lorem p {
+    padding: 20px 20px 0px;
+    line-height: 23px;
+}
+
+.services .content .box1 .lorem input[type="button"] {
+    margin: 20px 0px 0px 100px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    font-family: bold;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* this is box2  */
+
+.services .content .box2 {
+    position: relative;
+}
+
+.services .content .box2 svg {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.services .content .box2 svg circle {
+    height: 80px;
+    width: 80px;
+    stroke: black;
+    stroke-width: 3px;
+    fill: gold;
+}
+
+.services .content .box2 i {
+    top: -5px;
+    left: 125px;
+    position: absolute;
+}
+
+.services .content .box2 .lorem {
+    margin-top: 50px;
+}
+
+.services .content .box2 .lorem h3 {
+    color: gold;
+    text-align: center;
+}
+
+.services .content .box2 .lorem p {
+    padding: 20px 20px 0;
+    line-height: 23px;
+}
+
+.services .content .box2 .lorem input[type="button"] {
+    margin: 20px 0px 0px 100px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: gold;
+    color: #fff;
+    font-family: bold;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* this is box3  */
+
+.services .content .box3 {
+    position: relative;
+}
+
+.services .content .box3 svg {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.services .content .box3 svg circle {
+    height: 80px;
+    width: 80px;
+    stroke: black;
+    stroke-width: 3px;
+    fill: white;
+}
+
+.services .content .box3 i {
+    top: -5px;
+    left: 123px;
+    position: absolute;
+}
+
+.services .content .box3 .lorem {
+    margin-top: 50px;
+}
+
+.services .content .box3 .lorem h3 {
+    text-align: center;
+}
+
+.services .content .box3 .lorem p {
+    padding: 20px 20px 0;
+    line-height: 23px;
+}
+
+.services .content .box3 .lorem input[type="button"] {
+    margin: 20px 0px 0px 100px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    font-family: bold;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* this is shop section  */
+
+.shop {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 550px;
+    background-color: seashell;
+}
+
+.shop h1 {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.shop h1::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 618px;
+    width: 110px;
+    border-bottom: 3px solid gold;
+}
+
+.shop .main_template {
+    padding: 5px;
+    background-color: white;
+
+    /* adding flex box  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* this is box 1  */
+
+.shop .main_template .box1 {
+    width: 250px;
+    height: 345px;
+    background-color: white;
+}
+
+.shop .main_template .box1 img {
+    height: 250px;
+    width: 250px;
+}
+
+.shop .main_template .box1 h4 {
+    text-align: center;
+}
+
+.shop .main_template .box1 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box1 p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box1:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* this is box 2  */
+
+.shop .main_template .box2 {
+    width: 250px;
+    height: 345px;
+    margin-top: -0px;
+}
+
+.shop .main_template .box2 img {
+    height: 250px;
+    width: 250px;
+}
+
+.shop .main_template .box2 h4 {
+    text-align: center;
+}
+
+.shop .main_template .box2 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box2 p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box2:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* this is box 3 */
+
+.shop .main_template .box3 {
+    width: 250px;
+    margin-top: -0px;
+    height: 345px;
+}
+
+.shop .main_template .box3 img {
+    height: 250px;
+    width: 250px;
+}
+
+.shop .main_template .box3 h4 {
+    text-align: center;
+}
+
+.shop .main_template .box3 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box3 p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box3:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* this is box 4 */
+
+.shop .main_template .box4 {
+    width: 250px;
+    height: 345px;
+}
+
+.shop .main_template .box4 img {
+    height: 250px;
+    width: 250px;
+}
+
+.shop .main_template .box4 h4 {
+    text-align: center;
+}
+
+.shop .main_template .box4 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box4 p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box4:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* this is box5  */
+
+.shop .main_template .box5 {
+    width: 250px;
+    height: 345px;
+}
+
+.shop .main_template .box5 img {
+    height: 250px;
+    width: 250px;
+}
+
+.shop .main_template .box5 h4 {
+    text-align: center;
+}
+
+.shop .main_template .box5 .star {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box5 p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.shop .main_template .box5:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* this is view  */
+
+.shop .view {
+    padding: 30px 30px 0px 0px;
+    float: right;
+}
+
+.shop .view input[type="button"] {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    background-color: black;
+    transition: .5s all;
+}
+
+.shop .view input[type="button"]:hover {
+    cursor: pointer;
+    background-color: gold;
+}
+
+/* this is blog section  */
+
+.blog {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #e6e6e6;
+}
+
+.blog h1 {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.blog h1::after {
+    content: "";
+    left: 645px;
+    top: 60px;
+    position: absolute;
+    width: 60px;
+    border-bottom: 3px solid gold;
+}
+
+.blog .card {
+    margin: 100px 0px 0px 300px;
+    width: 55%;
+    height: 350px;
+
+    /* adding flex box  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog .card .box_1,
+.box_2 {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px -1px 8px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px -1px 8px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -1px 8px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+}
+
+/* this is box1  */
+
+.blog .card .box_1 img {
+    width: 350px;
+    height: 200px;
+}
+
+.blog .card .text_1 {
+    padding: 10px;
+}
+
+.blog .card .text_1 h4 {
+    padding-top: 10px;
+}
+
+.blog .card .text_1 .first {
+    padding-top: 10px;
+}
+
+/* this is box2  */
+
+.blog .card .box_2 img {
+    width: 350px;
+    height: 200px;
+}
+
+.blog .card .text_2 {
+    padding: 10px;
+}
+
+.blog .card .text_2 h4 {
+    padding-top: 10px;
+}
+
+.blog .card .text_2 .second {
+    padding-top: 10px;
+}
+
+/* this is more  */
+
+.blog .more {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.blog .more input[type="button"] {
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    background-color: black;
+    transition: .5s all;
+}
+
+.blog .more input[type="button"]:hover {
+    cursor: pointer;
+    background-color: gold;
+}
+
+/* this is deal section  */
+
+.deal {
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6)),
+        url(../img/water-rich_fruits_main.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.deal h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+.deal h1::after {
+    content: "";
+    left: 540px;
+    top: 60px;
+    position: absolute;
+    width: 270px;
+    border-bottom: 3px solid gold;
+}
+
+.deal .template {
+    margin: 120px 400px 0;
+    width: 40%;
+    height: 80px;
+
+    /* adding flex box  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deal .template .one,
+.two,
+.three,
+.four {
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    background-color: gold;
+}
+
+/* this is day  */
+
+.deal .template .one .day {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.deal .template .one .day p {
+    font-size: 30px;
+}
+
+/* this is hour */
+
+.deal .template .two .hour {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.deal .template .two .hour p {
+    font-size: 30px;
+}
+
+/* this is minutes */
+
+.deal .template .three .minutes {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.deal .template .three .minutes p {
+    font-size: 30px;
+}
+
+/* this is second */
+
+.deal .template .four .second {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.deal .template .four .second p {
+    font-size: 30px;
+}
+
+/* this is subscript section  */
+
+.subscript {
+    margin: 0;
+    padding: 100px 0px 0px 250px;
+    width: 100%;
+    height: 400px;
+    background-color: gold;
+}
+
+.subscript .article {
+    padding-top: 50px;
+    height: 250px;
+    width: 75%;
+
+    /* adding flex box  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subscript .article .first {
+    width: 250px;
+}
+
+.subscript .article .second {
+    margin-left: 50px;
+    width: 600px;
+}
+
+.subscript .article .second p {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.subscript .article .second .btn2 {
+    position: relative;
+}
+
+.subscript .article .second .btn2 input[type="email"] {
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 350px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.subscript .article .second .btn2 input[type="submit"] {
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    position: absolute;
+    top: 22px;
+    left: 267px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .7s all;
+    background-color: gold;
+}
+
+.subscript .article .second .btn2 input[type="submit"]:hover {
+    background-color: black;
+}
+
+/* this is about section  */
+
+.about {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #f3f4ed;
+}
+
+
+.about h1 {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about h1::after {
+    content: "";
+    width: 110px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 60px;
+    left: 620px;
+}
+
+.about .about_us {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about .about_us .about_one,
+.about_two,
+.about_three {
+    padding: 80px 0px 0px 40px;
+    width: 420px;
+    line-height: 30px;
+}
+
+.about .about_us ul h2 {
+    text-align: center;
+}
+
+.about .about_us ul li {
+    list-style-type: lower-roman;
+}
+
+/* this is contact section  */
+
+.contact {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 450px;
+    background-color: white;
+
+}
+
+.contact h1 {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.contact h1::after {
+    content: "";
+    width: 120px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 60px;
+    left: 615px;
+}
+
+.contact aside {
+    width: 100%;
+    height: 363px;
+
+    /* adding flex box  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact aside .side_1,
+.side_2 {
+    width: 50%;
+    height: 363px;
+    background-color: white;
+}
+
+
+/* this is side 1  */
+
+.contact aside .side_1 {
+    padding: 80px 0px 0px 200px;
+    background-color: #f7f7f7;
+}
+
+.contact aside .side_1 h2 {
+    position: relative;
+    padding-left: 100px;
+}
+
+.contact aside .side_1 h2::after {
+    content: "";
+    width: 100px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 30px;
+    left: 92px;
+}
+
+.contact aside .side_1 ol {
+    padding-top: 50px;
+}
+
+.contact aside .side_1 ol li {
+    line-height: 50px;
+    text-align: justify;
+    list-style-type: none;
+}
+
+.contact aside .side_1 ol li span {
+    color: #000;
+    font-size: 20px;
+}
+
+
+/* this is side2  */
+
+.contact aside .side_2 iframe {
+    width: 100%;
+    height: 363px;
+}
+
+
+/* this is the article section  */
+
+article {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #383e56;
+    position: relative;
+}
+
+article .main_article {
+    padding: 30px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article .main_article ol {
+    width: 300px;
+    height: auto;
+    background-color: #383e56;
+}
+
+
+/* this is one  */
+
+article .main_article .one h2 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+article .main_article .one h2::after {
+    content: "";
+    width: 100px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 25px;
+    left: 103px;
+}
+
+article .main_article .one p {
+    padding-top: 30px;
+    width: 250px;
+    color: #fff;
+}
+
+article .main_article .one input[type="button"] {
+    margin: 20px 0px 0px 70px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #383e56;
+}
+
+article .main_article .one input[type="button"]:hover {
+    cursor: pointer;
+    background-color: gold;
+}
+
+/* this is two  */
+
+article .main_article .two h2 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+article .main_article .two h2::after {
+    content: "";
+    width: 140px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+
+article .main_article .two p {
+    color: #fff;
+}
+
+article .main_article .two .before {
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+article .main_article .two .before img {
+    margin-right: 10px;
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+article .main_article .two .before .date {
+    padding-top: 10px;
+}
+
+article .main_article .two .after {
+    padding-top: 30px;
+}
+
+
+/* this is three  */
+
+article .main_article .three h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+article .main_article .three h2::after {
+    content: "";
+    width: 140px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+
+article .main_article .three :nth-child(2) {
+    padding-top: 30px;
+}
+
+article .main_article .three li {
+    padding-left: 80px;
+    list-style-type: none;
+    color: #fff;
+    line-height: 30px;
+}
+
+article .main_article .three li:hover {
+    cursor: pointer;
+    color: gold;
+    text-decoration: underline;
+}
+
+/* this is four  */
+article .main_article .four {
+    position: relative;
+}
+
+article .main_article .four h2 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+article .main_article .four h2::after {
+    content: "";
+    width: 120px;
+    border-bottom: 3px solid gold;
+    position: absolute;
+    top: 25px;
+    left: 90px;
+}
+
+article .main_article .four :nth-child(2) {
+    padding-top: 30px;
+}
+
+article .main_article .four li {
+    padding-left: 80px;
+    line-height: 50px;
+    color: #fff;
+    list-style-type: none;
+}
+
+article .main_article .four li span {
+    padding-left: 60px;
+}
+
+article .up_arrow {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    background-color: #3b3b3b88;
+
+}
+
+article .up_arrow i {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+footer p {
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+/* .................... this is media query .................. */
+
+/* this is landscape desktop, lapop  */
+
+@media (min-width:1200px) {}
+
+/* this is low resolation laptop desktop  */
+
+@media (max-width:990px) {
+
+    /* this is nav  */
+    nav {
+        padding: 0px 20px;
+    }
+
+    .navHeader {
+        display: block
+    }
+
+    .active {
+        margin-left: 70%;
+        top: 0px;
+        position: absolute;
+    }
+
+    nav .navSearch {
+        margin-left: 15%;
+    }
+
+    nav .ul {
+        padding: 0px 50%;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        left: 0px;
+        height: 36vh;
+        top: -450px;
+        display: inline-block;
+        transition: top .1s;
+        background-color: rgba(0, 0, 0, 0.308);
+    }
+
+    nav .ul a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav .menueBar {
+        top: 3px;
+        right: 20px;
+        position: absolute;
+        display: block;
+    }
+
+    nav .show {
+        top: 50px;
+    }
+
+    /* this is header  */
+
+    header {
+        max-width: auto;
+        height: 40vh;
+    }
+
+    header .background_middle {
+        width: 750px;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+
+    header .background_middle h3 {
+        font-size: 60px;
+    }
+
+    header .background_middle p {
+        padding-top: 25px;
+        width: 600px;
+    }
+
+    /* this is .top-product */
+
+    .top-product .container h1::after {
+        left: 442px;
+        width: 111px;
+    }
+
+    .top-product .product {
+        margin: 100px 45px 0px;
+        width: 90%;
+    }
+
+    /* this is .about_meal */
+
+    .about_meal .main-content {
+        margin: 100px 35px 0px;
+    }
+
+    .about_meal h1::after {
+        left: 423px;
+        width: 146px;
+    }
+
+    .about_meal .main-content img {
+        width: 350px;
+        height: auto;
+    }
+
+    .about_meal .main-content .paragraph {
+        width: 500px;
+        height: auto;
+        left: 400px;
+    }
+
+    .paragraph h2 {
+        font-size: 16px;
+    }
+
+    .about_meal .main-content .paragraph p {
+        padding-top: 10px;
+        line-height: 21px;
+        width: 371px;
+    }
+
+    /* this is .services  */
+
+    .services h1::after {
+        width: 78px;
+        left: 457px;
+    }
+
+    .services .content {
+        margin: 60px 43px 0px;
+        width: 90%;
+    }
+
+    .services .content .box1,
+    .box2,
+    .box3 {
+        width: 250px;
+    }
+
+    /* this is shop  */
+
+    .shop {
+        height: 800px;
+    }
+
+    .shop h1::after {
+        left: 450px;
+        width: 90px;
+    }
+
+    .shop .main_template .box1 {
+        width: 250px;
+        height: 288px;
+    }
+
+    .shop .main_template .box2 {
+        width: 250px;
+        height: 288px;
+    }
+
+    .shop .main_template .box3 {
+        width: 250px;
+        height: 288px;
+    }
+
+    .shop .main_template .box4 {
+        margin-top: 30px;
+        width: 250px;
+        height: 288px;
+    }
+
+    .shop .main_template .box5 {
+        margin-top: 30px;
+        width: 250px;
+        height: 288px;
+    }
+
+    .shop .main_template .box1 img {
+        height: 200px;
+        width: 226px;
+    }
+
+    .shop .main_template .box2 img {
+        height: 200px;
+        width: 226px;
+    }
+
+    .shop .main_template .box3 img {
+        height: 200px;
+        width: 226px;
+    }
+
+    .shop .main_template .box4 img {
+        height: 200px;
+        width: 226px;
+    }
+
+    .shop .main_template .box5 img {
+        height: 200px;
+        width: 226px;
+    }
+
+    /* this is blog  */
+
+    .blog h1::after {
+        content: "";
+        left: 474px;
+        top: 60px;
+        position: absolute;
+        width: 43px;
+        border-bottom: 3px solid gold;
+    }
+
+    .blog .card {
+        margin: 100px 65px 0px;
+        width: 88%;
+    }
+
+    /* this is deal  */
+
+    .deal h1::after {
+        left: 365px;
+        width: 259px;
+    }
+
+    .deal .template {
+        margin: 120px 297px 0;
+    }
+
+    /* .subscript */
+
+    .subscript {
+        padding: 100px 35px 0px;
+    }
+
+    .subscript .article {
+        width: 100%;
+    }
+
+
+    /* this is about  */
+
+    .about h1::after {
+        width: 79px;
+        left: 456px;
+    }
+
+    /* this is .contact  */
+
+    .contact h1::after {
+        width: 95px;
+        left: 450px;
+    }
+
+    .contact aside .side_1 h2::after {
+        width: 68px;
+        left: 98px;
+
+    }
+
+    article .main_article .one h2::after {
+        width: 68px;
+        left: 92px;
+    }
+
+    article .main_article .two h2::after {
+        width: 104px;
+        left: 66px;
+    }
+
+    article .main_article .three h2::after {
+        width: 99px;
+        left: 68px;
+    }
+
+    article .main_article .four h2::after {
+        width: 79px;
+        left: 78px;
+    }
+
+    /*👉 .contact aside .side_2 iframe {
+        max-width: 100%;
+    }👈*/
+
+    article .main_article .four li {
+        padding-left: 80px;
+        line-height: 20px;
+        color: #fff;
+        list-style-type: none;
+    }
+}
+
+/* potrate phone  */
+
+@media (min-width:800px) {}
+
+@media (max-width:790px) {}
+
+/* landscrape screen Mobile Phone Android and apple  */
+
+/* small Mobile Phone Android and apple  */
+
+@media (max-width:500px) {}
